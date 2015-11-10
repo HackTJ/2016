@@ -27,7 +27,7 @@ var confirmation = document.querySelector('.confirmation-text');
 
 // Regular Expressions
 var phoneNumber = /^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-var emailAddress = /^[^@]*@[a-z\-._]{1,}\.[a-z]{2,}$/i;
+var emailAddress = /^[^@\s]*@[a-z\-._]{1,}\.[a-z]{2,}$/i;
 
 // Event Listeners
 var validate = function(e){
