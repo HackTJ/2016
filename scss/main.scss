@@ -12,6 +12,25 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	color: white;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+.sponsors-link{
+	display: block;
+	position: absolute;
+	bottom: 0.4em;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight: 100;
+	@include respond-to("mobile"){
+		position: relative;
+		margin-top: 0.5em;
+	}
 }
 
 .centered-box{
@@ -24,6 +43,14 @@ body {
 	top: 5%;
 	left: 50%;
 	transform: translate(-50%, 0);
+
+	@include respond-to("mobile"){
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin-top: 1em;
+	}
 
 	.logo{
 		display: block;
