@@ -17,7 +17,7 @@ body {
 	min-height: 100%;
 }
 
-.sponsors-link{
+.footer-links{
 	display: block;
 	position: absolute;
 	bottom: 0.4em;
@@ -31,6 +31,22 @@ body {
 		position: relative;
 		margin-top: 0.5em;
 	}
+	.bullet{
+		display: inline-block;
+		@include respond-to("mobile"){
+			display: none;
+		}
+	}
+	a{
+		color: white;
+		display: inline-block;
+		margin: 0 5px;
+		@include respond-to("mobile"){
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
 }
 
 .centered-box{
